@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/vv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Enter a  City"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/weatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="getWeather"
+        android:text="what's the weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <TextView
+        android:id="@+id/geoView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="86dp"
+        android:textAlignment="center"
+        android:textColor="#D2B8D6"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherButton" />
+
+    <TextView
+        android:id="@+id/tempView"
+        android:layout_width="wrap_content"
+        android:layout_height="129dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:textAlignment="center"
+        android:textColor="#C68D8D"
+        android:textSize="96sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geoView" />
+
+    <TextView
+        android:id="@+id/feelView"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="120dp"
+        android:textAlignment="center"
+        android:textColor="#E4E1E1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lookView" />
+
+    <TextView
+        android:id="@+id/humidView"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="121dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelView" />
+
+    <TextView
+        android:id="@+id/lookView"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="96dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
